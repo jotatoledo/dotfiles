@@ -7,3 +7,5 @@
 	amend = commit -amend
 [rebase]
 	autosquash = true
+[include]
+  path = ./.gitconfig.user
