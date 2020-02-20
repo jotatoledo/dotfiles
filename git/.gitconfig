@@ -2,3 +2,5 @@
 	autocrlf = true
 [alias]
 	undo = reset HEAD~ --soft
+	f-me = reset --hard HEAD
+	f-you = push --force
