@@ -4,3 +4,5 @@
 	undo = reset HEAD~ --soft
 	f-me = reset --hard HEAD
 	f-you = push --force
+[rebase]
+	autosquash = true
