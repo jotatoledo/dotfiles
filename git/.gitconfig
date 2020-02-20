@@ -4,7 +4,7 @@
 	undo = reset HEAD~ --soft
 	f-me = reset --hard HEAD
 	f-you = push --force
-	amend = commit -amend
+	amend = commit --amend
 [rebase]
 	autosquash = true
 [include]
