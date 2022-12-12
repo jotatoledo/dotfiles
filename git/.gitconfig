@@ -5,7 +5,22 @@
 	f-me = reset --hard HEAD
 	f-you = push --force
 	amend = commit --amend
+	prune = git fetch --prune
 [rebase]
 	autosquash = true
 [include]
   path = ./.gitconfig.user
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[credential]
+	helper = C:/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe
+[credential "https://git.3kd.io"]
+	provider = generic
+[difftool "sourcetree"]
+	cmd = '' \"$LOCAL\" \"$REMOTE\"
+[mergetool "sourcetree"]
+	cmd = "'' "
+	trustExitCode = true
