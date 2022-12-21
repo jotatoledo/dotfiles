@@ -5,7 +5,7 @@
 	f-me = reset --hard HEAD
 	f-you = push --force
 	amend = commit --amend
-	prune = git fetch --prune
+	prune = fetch --prune
 [rebase]
 	autosquash = true
 [include]
